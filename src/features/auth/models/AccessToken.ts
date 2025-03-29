@@ -1,4 +1,4 @@
-export interface accessToken {
+export interface AccessToken {
     token: string;
     expirationDate: string;
 }

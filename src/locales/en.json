@@ -1,0 +1,50 @@
+{
+    "auth": {
+      "login": {
+        "success": "Login successful",
+        "failed": "Login failed",
+        "error": "An error occurred: {error}",
+        "metaDescription": "Log in to the Staff Panel application",
+        "welcomeMessage": "Welcome to the staff management system. Please log in to continue.",
+        "illustration": "Login illustration",
+        "copyright": "All rights reserved."
+      },
+      "logout": {
+        "success": "Logout successful",
+        "error": "Error during logout"
+      },
+      "user": {
+        "notFound": "User information could not be retrieved",
+        "refreshTokenNotFound": "Refresh token not found",
+        "tokenRefreshFailed": "Token refresh failed",
+        "tokenRefreshSuccess": "Token successfully refreshed",
+        "tokenRefreshError": "Error during token refresh"
+      },
+      "form": {
+        "email": "Email Address",
+        "password": "Password",
+        "rememberMe": "Remember me",
+        "forgotPassword": "Forgot password",
+        "loginButton": "Login",
+        "loading": "Logging in...",
+        "registerLink": "Register",
+        "noAccount": "Don't have an account?"
+      }
+    },
+    "common": {
+      "language": "Language",
+      "changeLanguage": "Change language"
+    },
+    "dashboard": {
+      "welcome": "Welcome!",
+      "logout": "Logout",
+      "userInfo": "User Information",
+      "personalInfo": "Your personal information",
+      "role": "Role",
+      "stats": "Statistics",
+      "overview": "Overview",
+      "activities": "Activities",
+      "recentActivities": "Your recent activities",
+      "comingSoon": "Coming soon..."
+    }
+  }

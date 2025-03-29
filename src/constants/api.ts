@@ -5,5 +5,8 @@ export const API = {
       LOGIN: '/v1/auth/login',
       REGISTER:'/v1/auth/register',
       REFRESHTOKEN:'/v1/auth/refreshtoken'
+    },
+    USER:{
+      USER:'/v1/users',
     }
   };

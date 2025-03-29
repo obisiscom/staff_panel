@@ -1,0 +1,50 @@
+{
+    "auth": {
+        "login": {
+            "success": "Giriş başarılı",
+            "failed": "Giriş başarısız",
+            "error": "Bir hata oluştu: {error}",
+            "metaDescription": "Staff Panel uygulamasına giriş yapın",
+            "welcomeMessage": "Personel yönetim sistemine hoş geldiniz. Giriş yaparak devam edin.",
+            "illustration": "Giriş görseli",
+            "copyright": "Tüm hakları saklıdır."
+        },
+        "logout": {
+            "success": "Çıkış başarılı",
+            "error": "Çıkış sırasında hata oluştu"
+        },
+        "user": {
+            "notFound": "Kullanıcı bilgileri alınamadı",
+            "refreshTokenNotFound": "Refresh token bulunamadı",
+            "tokenRefreshFailed": "Token yenileme başarısız",
+            "tokenRefreshSuccess": "Token başarıyla yenilendi",
+            "tokenRefreshError": "Token yenileme sırasında hata oluştu"
+        },
+        "form": {
+            "email": "E-posta Adresi",
+            "password": "Şifre",
+            "rememberMe": "Beni hatırla",
+            "forgotPassword": "Şifremi unuttum",
+            "loginButton": "Giriş Yap",
+            "loading": "Giriş yapılıyor...",
+            "registerLink": "Kayıt Olun",
+            "noAccount": "Hesabınız yok mu?"
+        }
+    },
+    "common": {
+        "language": "Dil",
+        "changeLanguage": "Dil değiştir"
+    },
+    "dashboard": {
+        "welcome": "Hoş Geldiniz!",
+        "logout": "Çıkış Yap",
+        "userInfo": "Kullanıcı Bilgileri",
+        "personalInfo": "Kişisel bilgileriniz",
+        "role": "Rol",
+        "stats": "İstatistikler",
+        "overview": "Genel bakış",
+        "activities": "Aktiviteler",
+        "recentActivities": "Son aktiviteleriniz",
+        "comingSoon": "Yakında..."
+    }
+}

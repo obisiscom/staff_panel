@@ -1,4 +1,4 @@
-import { AccessToken } from "@/types/auth";
+import { AccessToken } from "./AccessToken";
 
 export interface LoginResponse {
     accessToken: AccessToken;
