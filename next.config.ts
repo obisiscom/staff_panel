@@ -5,11 +5,4 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
-module.exports={
-  i18n:{
-    locales:['tr','en'],
-    defaultLocale:'tr',
-  }
-}
-
 export default nextConfig;

@@ -17,7 +17,7 @@ interface LoginFormProps{
     callbackUrl?:string
 }
 
-export function LoginForm({callbackUrl = '/dashboard'}:LoginFormProps) {
+export function LoginForm2({callbackUrl = '/dashboard'}:LoginFormProps) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

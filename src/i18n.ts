@@ -1,21 +1,29 @@
-import {notFound} from 'next/navigation';
+import { notFound } from 'next/navigation';
+import { getRequestConfig } from 'next-intl/server';
 
-import {getRequestConfig} from 'next-intl/server';
+// Desteklenen diller
+export const locales = ['en', 'tr'];
+export const defaultLocale = 'tr';
 
-// Can be imported from a shared config
+export default getRequestConfig(async ({ locale }) => {
+  const selectedLocale = locale ?? defaultLocale;
 
-const locales = ['en', 'de'];
+  if (!locales.includes(selectedLocale)) {
+    notFound();
+  }
 
-export default getRequestConfig(async ({locale:getRequestConfig}) => {
+  try {
+    const messages = (await import(`./locales/${locale}.json`)).default;
 
-  // Validate that the incoming `locale` parameter is valid
-
-  if (!locales.includes(locale as any)) notFound();
-
-  return {
-
-    messages: (await import(`../messages/${locale}.json`)).default
-
-  };
-
+    return {
+      locale: selectedLocale,
+      messages
+    };
+  } catch (error) {
+    console.error(`Could not load messages for locale "${locale}"`, error);
+    return {
+      locale: selectedLocale,
+      messages: {}
+    };
+  }
 });
